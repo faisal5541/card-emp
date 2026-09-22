@@ -9,18 +9,21 @@
     --saudi-gold: #C5A869;
   }
 
-  body {
+  html, body {
     direction: rtl;
     text-align: right;
     background-color: #F8F6F0;
     font-family: 'Tajawal', 'IBM Plex Sans Arabic', sans-serif;
+    overflow-x: hidden;
+    max-width: 100%;
+    -webkit-tap-highlight-color: transparent;
   }
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {

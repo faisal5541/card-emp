@@ -66,7 +66,7 @@ export const ShareButton: React.FC<ShareButtonProps> = ({
       type="button"
       onClick={handleShare}
       disabled={isSharing}
-      className="py-3.5 px-5 rounded-xl font-bold text-base bg-white hover:bg-slate-50 text-slate-800 border-2 border-slate-200 hover:border-saudi-400 shadow-sm transition-all flex items-center justify-center gap-2 active:scale-[0.98] disabled:opacity-75 disabled:pointer-events-none"
+      className="flex-1 min-w-[140px] py-3.5 px-5 rounded-xl font-bold text-base bg-white hover:bg-slate-50 text-slate-800 border-2 border-slate-200 hover:border-saudi-400 shadow-sm transition-all flex items-center justify-center gap-2 active:scale-[0.98] disabled:opacity-75 disabled:pointer-events-none"
     >
       {isSharing ? (
         <>

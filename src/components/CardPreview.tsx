@@ -64,7 +64,7 @@ export const CardPreview: React.FC<CardPreviewProps> = ({
   }, [template, name, userFontSize, debug, customNameArea, onRenderComplete]);
 
   return (
-    <div className="relative w-full max-w-md mx-auto flex flex-col items-center select-none">
+    <div className="relative w-full max-w-[290px] sm:max-w-md mx-auto flex flex-col items-center select-none">
       {/* Container with rounded frame and elegant shadow */}
       <div className="relative w-full rounded-2xl overflow-hidden shadow-2xl bg-slate-900 border border-slate-200/50">
         
@@ -86,8 +86,7 @@ export const CardPreview: React.FC<CardPreviewProps> = ({
         {/* Canvas displaying 1:1 preview */}
         <canvas
           ref={canvasRef}
-          className="w-full h-auto block object-contain transition-opacity duration-300"
-          style={{ maxHeight: '72vh' }}
+          className="w-full h-auto block object-contain transition-opacity duration-300 max-h-[44vh] sm:max-h-[72vh]"
         />
 
         {/* Debug watermark badge */}

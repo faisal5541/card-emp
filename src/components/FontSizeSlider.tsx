@@ -55,14 +55,14 @@ export const FontSizeSlider: React.FC<FontSizeSliderProps> = ({
         </div>
       </div>
 
-      <div className="flex items-center gap-3 pt-1">
+      <div className="flex items-center gap-2.5 sm:gap-3 pt-1">
         {/* Decrease Button [-] */}
         <button
           type="button"
           onClick={handleDecrease}
           disabled={value <= min}
           aria-label="تصغير حجم الخط"
-          className="w-9 h-9 rounded-lg bg-white border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-saudi-50 hover:text-saudi-900 hover:border-saudi-300 disabled:opacity-40 disabled:pointer-events-none transition-all shadow-sm active:scale-95"
+          className="w-10 h-10 sm:w-9 sm:h-9 rounded-xl sm:rounded-lg bg-white border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-saudi-50 hover:text-saudi-900 hover:border-saudi-300 disabled:opacity-40 disabled:pointer-events-none transition-all shadow-sm active:scale-95 shrink-0"
         >
           <Minus className="w-4 h-4 stroke-[2.5]" />
         </button>
@@ -77,7 +77,7 @@ export const FontSizeSlider: React.FC<FontSizeSliderProps> = ({
             step={step}
             value={value}
             onChange={(e) => onChange(Number(e.target.value))}
-            className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-saudi-700 focus:outline-none focus:ring-2 focus:ring-saudi-500/20"
+            className="w-full h-2.5 sm:h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-saudi-700 focus:outline-none focus:ring-2 focus:ring-saudi-500/20"
           />
           <div className="flex justify-between text-[10px] text-slate-400 mt-1 font-mono">
             <span>{min}px</span>
@@ -91,7 +91,7 @@ export const FontSizeSlider: React.FC<FontSizeSliderProps> = ({
           onClick={handleIncrease}
           disabled={value >= max}
           aria-label="تكبير حجم الخط"
-          className="w-9 h-9 rounded-lg bg-white border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-saudi-50 hover:text-saudi-900 hover:border-saudi-300 disabled:opacity-40 disabled:pointer-events-none transition-all shadow-sm active:scale-95"
+          className="w-10 h-10 sm:w-9 sm:h-9 rounded-xl sm:rounded-lg bg-white border border-slate-200 flex items-center justify-center text-slate-700 hover:bg-saudi-50 hover:text-saudi-900 hover:border-saudi-300 disabled:opacity-40 disabled:pointer-events-none transition-all shadow-sm active:scale-95 shrink-0"
         >
           <Plus className="w-4 h-4 stroke-[2.5]" />
         </button>
