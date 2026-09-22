@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --saudi-green: #006C35;
+    --saudi-dark: #0B241E;
+    --saudi-gold: #C5A869;
+  }
+
+  body {
+    direction: rtl;
+    text-align: right;
+    background-color: #F8F6F0;
+    font-family: 'Tajawal', 'IBM Plex Sans Arabic', sans-serif;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1ede4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c5bba8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a99d85;
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(220, 210, 190, 0.4);
+}
+
+.dark-glass-panel {
+  background: rgba(11, 36, 30, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(197, 168, 105, 0.25);
+}
+
+/* Subtle pattern background */
+.bg-islamic-pattern {
+  background-color: #0b241e;
+  background-image: radial-gradient(rgba(197, 168, 105, 0.12) 1px, transparent 0);
+  background-size: 24px 24px;
+}

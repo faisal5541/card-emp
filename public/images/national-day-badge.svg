@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 110" fill="none">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@700;900&amp;display=swap');
+    .badge-ar {
+      font-family: 'Tajawal', 'Cairo', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      text-rendering: geometricPrecision;
+      direction: rtl;
+      unicode-bidi: isolate;
+    }
+    .badge-en {
+      font-family: 'Tajawal', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      letter-spacing: 3px;
+      direction: ltr;
+    }
+  </style>
+
+  <!-- Badge Background -->
+  <rect width="320" height="110" rx="14" fill="#003820" stroke="#C5A869" stroke-width="1.5"/>
+  <rect x="4" y="4" width="312" height="102" rx="10" stroke="#0B7A4B" stroke-width="1" stroke-dasharray="4 2" opacity="0.4"/>
+  
+  <!-- Slogan Calligraphy / Title -->
+  <text x="160" y="44" font-size="25" font-weight="900" fill="#FFFFFF" text-anchor="middle" class="badge-ar">عزّنا بطبعنا</text>
+
+  <!-- Decorative Separator -->
+  <line x1="50" y1="56" x2="270" y2="56" stroke="#C5A869" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+  <circle cx="160" cy="56" r="3" fill="#C5A869"/>
+
+  <!-- Subtitle Arabic -->
+  <text x="160" y="78" font-size="14" font-weight="700" fill="#E8D8AF" text-anchor="middle" class="badge-ar">اليوم الوطني السعودي</text>
+
+  <!-- Subtitle English -->
+  <text x="160" y="95" font-size="9" font-weight="600" fill="#9AE6B4" text-anchor="middle" class="badge-en">SAUDI NATIONAL DAY</text>
+</svg>

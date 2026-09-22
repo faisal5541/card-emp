@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 400" fill="none">
+  <!-- 6 Heritage Sadu Cultural Color Strips -->
+  
+  <!-- Strip 1: Saudi Green -->
+  <g transform="translate(0, 0)">
+    <rect width="20" height="400" fill="#005A36"/>
+    <!-- Repeating Sadu geometric motifs -->
+    <pattern id="sadu-green" width="20" height="40" patternUnits="userSpaceOnUse">
+      <polygon points="10,4 16,14 4,14" fill="#FFFFFF" opacity="0.3"/>
+      <polygon points="10,36 16,26 4,26" fill="#FFFFFF" opacity="0.3"/>
+      <circle cx="10" cy="20" r="3" fill="#C5A869"/>
+    </pattern>
+    <rect width="20" height="400" fill="url(#sadu-green)"/>
+  </g>
+
+  <!-- Strip 2: Sadu Crimson Red -->
+  <g transform="translate(20, 0)">
+    <rect width="20" height="400" fill="#C5221F"/>
+    <pattern id="sadu-red" width="20" height="30" patternUnits="userSpaceOnUse">
+      <polygon points="10,5 18,15 10,25 2,15" fill="#FFFFFF" opacity="0.35"/>
+      <polygon points="10,10 14,15 10,20 6,15" fill="#000000" opacity="0.3"/>
+    </pattern>
+    <rect width="20" height="400" fill="url(#sadu-red)"/>
+  </g>
+
+  <!-- Strip 3: Sadu Sky Blue -->
+  <g transform="translate(40, 0)">
+    <rect width="20" height="400" fill="#0284C7"/>
+    <pattern id="sadu-blue" width="20" height="36" patternUnits="userSpaceOnUse">
+      <line x1="2" y1="6" x2="18" y2="6" stroke="#FFFFFF" stroke-width="2" opacity="0.4"/>
+      <polygon points="10,12 16,22 4,22" fill="#FFFFFF" opacity="0.35"/>
+      <circle cx="10" cy="28" r="2.5" fill="#FFFFFF" opacity="0.5"/>
+    </pattern>
+    <rect width="20" height="400" fill="url(#sadu-blue)"/>
+  </g>
+
+  <!-- Strip 4: Sadu Violet / Purple -->
+  <g transform="translate(60, 0)">
+    <rect width="20" height="400" fill="#7C3AED"/>
+    <pattern id="sadu-purple" width="20" height="40" patternUnits="userSpaceOnUse">
+      <polygon points="10,6 17,16 10,26 3,16" stroke="#FFFFFF" stroke-width="1.5" fill="none" opacity="0.4"/>
+      <circle cx="10" cy="16" r="2" fill="#E8D8AF"/>
+      <line x1="4" y1="34" x2="16" y2="34" stroke="#FFFFFF" stroke-width="2" opacity="0.3"/>
+    </pattern>
+    <rect width="20" height="400" fill="url(#sadu-purple)"/>
+  </g>
+
+  <!-- Strip 5: Sadu Royal Blue -->
+  <g transform="translate(80, 0)">
+    <rect width="20" height="400" fill="#1D4ED8"/>
+    <pattern id="sadu-navy" width="20" height="32" patternUnits="userSpaceOnUse">
+      <polygon points="4,6 10,12 16,6" fill="#FFFFFF" opacity="0.3"/>
+      <polygon points="4,26 10,20 16,26" fill="#FFFFFF" opacity="0.3"/>
+      <circle cx="10" cy="16" r="2.5" fill="#93C5FD"/>
+    </pattern>
+    <rect width="20" height="400" fill="url(#sadu-navy)"/>
+  </g>
+
+  <!-- Strip 6: Sadu Desert Amber / Gold -->
+  <g transform="translate(100, 0)">
+    <rect width="20" height="400" fill="#D97706"/>
+    <pattern id="sadu-amber" width="20" height="34" patternUnits="userSpaceOnUse">
+      <polygon points="10,4 17,14 3,14" fill="#FFFFFF" opacity="0.35"/>
+      <polygon points="10,30 17,20 3,20" fill="#FFFFFF" opacity="0.35"/>
+      <rect x="7" y="15" width="6" height="4" fill="#003820" opacity="0.4"/>
+    </pattern>
+    <rect width="20" height="400" fill="url(#sadu-amber)"/>
+  </g>
+</svg>
