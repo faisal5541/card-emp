@@ -113,17 +113,6 @@ export const Header: React.FC<HeaderProps> = ({ currentTab, onNavigate }) => {
               <Layers className="w-3.5 h-3.5" />
               <span>التصاميم</span>
             </button>
-            <button
-              onClick={() => onNavigate('editor')}
-              className={`flex-1 flex items-center justify-center gap-1.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
-                currentTab === 'editor'
-                  ? 'bg-gold-500 text-slate-950 shadow-sm'
-                  : 'text-white/70 hover:text-white'
-              }`}
-            >
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>المحرر</span>
-            </button>
           </nav>
         </div>
 

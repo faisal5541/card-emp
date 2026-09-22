@@ -25,12 +25,6 @@ export const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Privacy & Browser note */}
-          <div className="text-[11px] text-white/50 max-w-xs leading-relaxed">
-            <span>
-              جميع عمليات إنشاء وتصدير البطاقات تتم محلياً وبأمان كامل داخل جهازك.
-            </span>
-          </div>
 
           {/* Copyright */}
           <div className="text-[11px] text-white/60">

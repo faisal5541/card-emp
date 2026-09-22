@@ -95,8 +95,8 @@ export async function drawCardOnCanvas(
   );
 
   // 6. Draw Name if provided or in debug mode
-  if (name.trim() || debug) {
-    const textToDraw = name.trim() || (debug ? 'فيصل جميل' : '');
+  if (name.trim()) {
+    const textToDraw = name.trim();
 
     ctx.save();
     ctx.direction = 'rtl';

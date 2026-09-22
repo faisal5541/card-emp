@@ -1,6 +1,6 @@
 import React from 'react';
 import { CardTemplate } from '../types';
-import { Sparkles, ArrowLeft, ShieldCheck, Download, Palette } from 'lucide-react';
+import { Sparkles, ArrowLeft, Download, Palette } from 'lucide-react';
 
 interface HomeProps {
   templates: CardTemplate[];
@@ -46,7 +46,7 @@ export const Home: React.FC<HomeProps> = ({
           </h1>
 
           <p className="text-sm sm:text-lg text-slate-200/90 font-medium max-w-xl mx-auto mt-4 sm:mt-6 leading-relaxed px-2">
-            أنشئ بطاقة تهنئة رسمية باسمك وشارك فرحة الوطن بدقة عالية وفورية
+            أنشئ بطاقة تهنئة رسمية باسمك وشارك فرحة الوطن
           </p>
 
           {/* CTA Buttons */}
@@ -59,22 +59,6 @@ export const Home: React.FC<HomeProps> = ({
               <span>ابدأ الآن</span>
               <ArrowLeft className="w-5 h-5" />
             </button>
-          </div>
-
-          {/* Micro badges */}
-          <div className="mt-8 sm:mt-12 flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-xs text-white/70 font-medium">
-            <span className="flex items-center gap-1.5 bg-white/5 sm:bg-transparent px-2.5 py-1 rounded-md">
-              <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
-              منصة رسمية معتمدة
-            </span>
-            <span className="flex items-center gap-1.5 bg-white/5 sm:bg-transparent px-2.5 py-1 rounded-md">
-              <Sparkles className="w-4 h-4 text-gold-400 shrink-0" />
-              3 تصاميم رسمية
-            </span>
-            <span className="flex items-center gap-1.5 bg-white/5 sm:bg-transparent px-2.5 py-1 rounded-md">
-              <Download className="w-4 h-4 text-teal-400 shrink-0" />
-              تصدير فوري بجودة 100%
-            </span>
           </div>
 
         </div>
