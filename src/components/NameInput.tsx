@@ -65,21 +65,6 @@ export const NameInput: React.FC<NameInputProps> = ({
           سيتم ضبط الخط ومكانه بدقة وبشكل تلقائي في البطاقة.
         </p>
       )}
-
-      {/* Quick Test Names */}
-      <div className="pt-1 flex flex-wrap items-center gap-1.5">
-        <span className="text-[11px] text-slate-400 font-medium ml-1">تجربة سريعة:</span>
-        {['فيصل', 'فيصل محمد', 'فيصل محمد الغامدي', 'عبدالله محمد عبدالرحمن'].map((testName) => (
-          <button
-            key={testName}
-            type="button"
-            onClick={() => onChange(testName)}
-            className="text-[11px] px-2.5 py-1 rounded-md bg-slate-100 hover:bg-saudi-50 text-slate-600 hover:text-saudi-800 border border-slate-200/80 transition-colors"
-          >
-            {testName}
-          </button>
-        ))}
-      </div>
     </div>
   );
 };

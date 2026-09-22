@@ -3,14 +3,12 @@ import { CardTemplate } from '../types';
 export const TEMPLATES: CardTemplate[] = [
   {
     id: "national-day-01",
-    title: "التصميم التراثي (عزنا بطبعنا)",
-    badgeTitle: "طابع تراثي فاخر",
-    description: "أصالة التراث ونقوش السدو مع هوية اليوم الوطني والحرمين الشريفين",
+    title: "التصميم 1",
     image: "/templates/national-day-01.jpg",
     aspectRatio: 1441 / 2560,
     nameArea: {
       x: 50.0,
-      y: 69.8,
+      y: 68.8,
       width: 48.0,
       height: 6.4,
       fontFamily: "Tajawal",
@@ -26,14 +24,12 @@ export const TEMPLATES: CardTemplate[] = [
   },
   {
     id: "national-day-02",
-    title: "التصميم الأخضر (مئذنة الحرم)",
-    badgeTitle: "مئذنة الحرم وزخارف ذهبية",
-    description: "خلفية خضراء داكنة فخمة مع مئذنة الحرم الشريف والنص باللون الذهبي",
+    title: "التصميم 2",
     image: "/templates/national-day-02.jpg",
     aspectRatio: 1440 / 2560,
     nameArea: {
       x: 50.0,
-      y: 74.0,
+      y: 73.6,
       width: 48.0,
       height: 4.2,
       fontFamily: "Tajawal",
@@ -49,14 +45,12 @@ export const TEMPLATES: CardTemplate[] = [
   },
   {
     id: "national-day-03",
-    title: "التصميم الروحاني (الحرم الشريف)",
-    badgeTitle: "أجواء الحرمين الشريفين",
-    description: "تصميم ملكي أخضر يعكس روحانية الحرم وجموع الطائفين والمصلين",
+    title: "التصميم 3",
     image: "/templates/national-day-03.jpg",
     aspectRatio: 1440 / 2560,
     nameArea: {
       x: 49.7,
-      y: 73.1,
+      y: 72.1,
       width: 48.0,
       height: 5.5,
       fontFamily: "Tajawal",

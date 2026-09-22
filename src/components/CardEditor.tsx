@@ -76,7 +76,7 @@ export const CardEditor: React.FC<CardEditorProps> = ({
           <div className="flex items-center gap-2 mb-1">
             <span className="inline-flex items-center gap-1 text-xs font-bold text-saudi-800 bg-saudi-50 border border-saudi-200 px-2.5 py-0.5 rounded-full">
               <Sparkles className="w-3.5 h-3.5 text-gold-500" />
-              اليوم الوطني السعودي 96
+              اليوم الوطني السعودي
             </span>
             {debug && (
               <span className="text-xs bg-rose-100 text-rose-800 font-mono px-2 py-0.5 rounded font-bold">

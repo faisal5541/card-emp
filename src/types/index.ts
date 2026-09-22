@@ -19,7 +19,7 @@ export interface CardTemplate {
   id: string;
   title: string;
   badgeTitle?: string;
-  description: string;
+  description?: string;
   image: string;
   nameArea: NameAreaConfig;
   aspectRatio?: number; // width / height

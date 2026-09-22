@@ -28,11 +28,8 @@ export const Header: React.FC<HeaderProps> = ({ currentTab, onNavigate }) => {
               <span className="text-xs text-gold-300 font-medium tracking-wide">
                 رئاسة الشؤون الدينية بالمسجد الحرام والمسجد النبوي
               </span>
-              <h1 className="text-base sm:text-lg font-bold text-white tracking-tight flex items-center gap-1.5">
+              <h1 className="text-base sm:text-lg font-bold text-white tracking-tight">
                 بطاقات اليوم الوطني السعودي
-                <span className="text-xs bg-gold-500/20 text-gold-300 border border-gold-500/30 px-2 py-0.5 rounded-full font-semibold">
-                  96
-                </span>
               </h1>
             </div>
           </div>

@@ -42,7 +42,7 @@ export const Home: React.FC<HomeProps> = ({
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight sm:leading-tight">
             بطاقات اليوم الوطني السعودي
             <span className="block mt-2 text-2xl sm:text-4xl lg:text-5xl font-extrabold bg-gradient-to-r from-gold-300 via-gold-400 to-gold-200 bg-clip-text text-transparent">
-              96 — عزنا بطبعنا
+              عزنا بطبعنا
             </span>
           </h1>
 
@@ -114,17 +114,14 @@ export const Home: React.FC<HomeProps> = ({
                 </div>
               </div>
 
-              <div className="p-5 flex flex-col flex-1 justify-between">
+              <div className="p-4 flex flex-col flex-1 justify-between">
                 <div>
                   <h3 className="font-bold text-base text-slate-900 group-hover:text-saudi-900 transition-colors">
                     {template.title}
                   </h3>
-                  <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                    {template.description}
-                  </p>
                 </div>
 
-                <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-saudi-800 font-bold text-xs">
+                <div className="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between text-saudi-800 font-bold text-xs">
                   <span>تخصيص هذا التصميم</span>
                   <ArrowLeft className="w-4 h-4 transform group-hover:-translate-x-1 transition-transform" />
                 </div>

@@ -25,7 +25,7 @@ export async function shareCardFile(blob: Blob, employeeName: string): Promise<S
   // 2. Check if canShare supports sharing this file
   const shareData = {
     title: 'بطاقة تهنئة باليوم الوطني السعودي',
-    text: `تهنئة بمناسبة اليوم الوطني السعودي 96 - ${employeeName}`,
+    text: `تهنئة بمناسبة اليوم الوطني السعودي - ${employeeName}`,
     files: [file],
   };
 
