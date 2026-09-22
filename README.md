@@ -114,21 +114,47 @@ npm run build
 
 ---
 
-## ☁️ النشر على Render (Deploy to Render)
+## ☁️ النشر والربط السحابي (GitHub, Vercel, Neon, Render)
 
-المشروع مُعد مسبقاً للنشر التلقائي عبر ملف `render.yaml`:
+### 1. مستودع GitHub
+تم رفع المشروع كاملاً إلى GitHub:
+🔗 **[https://github.com/faisal5541/card-emp](https://github.com/faisal5541/card-emp)**
 
-### الطريقة الأولى: عبر ملف `render.yaml` (Blueprints)
-1. ارفع المشروع إلى مستودع GitHub أو GitLab.
-2. ادخل إلى لوحة تحكم **Render** واختر **New +** ثم **Blueprint**.
-3. اربط مستودع المشروع، وسيقوم Render تلقائياً بقراءة `render.yaml` وإطلاق الموقع كـ Static Site.
+---
 
-### الطريقة الثانية: النشر اليدوي (Static Site)
-1. اختر **New +** ثم **Static Site**.
-2. حدد الإعدادات التالية:
+### 2. قاعدة بيانات Neon PostgreSQL
+تم إنشاء مشروع قاعدة بيانات سحابي مخصص للمنصة على **Neon**:
+- **اسم المشروع في Neon**: `haramain-national-day-cards`
+- **معرف المشروع (Project ID)**: `red-dust-82718890`
+- **قاعدة البيانات**: `neondb`
+- **الجدول المنشأ**: `greeting_cards` (لتسجيل البطاقات المنشأة عند الحاجة)
+- **رابط الاتصال (Connection String)**:
+```env
+DATABASE_URL=postgresql://neondb_owner:npg_FEe3nX6IvdcJ@ep-holy-sound-ar4kd52x-pooler.c-4.us-west-2.aws.neon.tech/neondb?channel_binding=require&sslmode=require
+```
+
+---
+
+### 3. النشر على Vercel
+المشروع مهيأ بملف [`vercel.json`](./vercel.json) للنشر الفوري كـ Vite SPA:
+1. ادخل إلى [Vercel Dashboard](https://vercel.com/new).
+2. اختر **Import** لمستودعك: **`faisal5541/card-emp`**.
+3. الإعدادات التلقائية المعتمدة:
+   - **Framework Preset**: Vite
    - **Build Command**: `npm run build`
-   - **Publish Directory**: `dist`
-3. اضغط على **Create Static Site**.
+   - **Output Directory**: `dist`
+4. في قسم **Environment Variables**، يمكنك إضافة:
+   - `DATABASE_URL`: رابط اتصال Neon أعلاه.
+   - `NEON_PROJECT_ID`: `red-dust-82718890`
+5. اضغط **Deploy** ليصبح موقعك متاحاً برابط مباشر مثل `https://card-emp.vercel.app`.
+
+---
+
+### 4. النشر على Render
+المشروع مُعد مسبقاً للنشر التلقائي عبر ملف `render.yaml`:
+1. ادخل إلى [Render Dashboard](https://dashboard.render.com).
+2. اختر **New +** ثم **Static Site** واربط المستودع `faisal5541/card-emp`.
+3. اضغط **Create Static Site**.
 
 ---
 
