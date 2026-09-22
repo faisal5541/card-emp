@@ -1,6 +1,6 @@
 /**
  * Sanitizes and generates a clean file name for card download.
- * Example: بطاقة_اليوم_الوطني_فيصل_محمد.png
+ * Example: بطاقة_اليوم_الوطني_فيصل_جميل.png
  */
 export function generateCardFileName(name: string): string {
   const cleanName = (name || 'الموظف')

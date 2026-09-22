@@ -37,7 +37,7 @@ export const NameInput: React.FC<NameInputProps> = ({
           maxLength={50}
           dir="rtl"
           onChange={(e) => onChange(e.target.value)}
-          placeholder="مثال: فيصل محمد"
+          placeholder="مثال: فيصل جميل"
           className={`w-full pr-11 pl-10 py-3.5 rounded-xl text-base font-semibold text-slate-900 bg-white border-2 shadow-sm placeholder:text-slate-400 focus:outline-none transition-all ${
             error
               ? 'border-rose-400 focus:border-rose-600 focus:ring-4 focus:ring-rose-500/10'
