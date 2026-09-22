@@ -29,7 +29,7 @@ export const TEMPLATES: CardTemplate[] = [
     aspectRatio: 1440 / 2560,
     nameArea: {
       x: 50.0,
-      y: 73.6,
+      y: 74.25,
       width: 48.0,
       height: 4.2,
       fontFamily: "Tajawal",
