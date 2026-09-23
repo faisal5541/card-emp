@@ -3,6 +3,7 @@ import { CardTemplate, NameAreaConfig } from '../types';
 import { exportCardAsBlob } from '../utils/canvasRenderer';
 import { shareCardFile } from '../utils/share';
 import { Share2, Loader2 } from 'lucide-react';
+import { track } from '@vercel/analytics';
 
 interface ShareButtonProps {
   template: CardTemplate;
@@ -49,6 +50,11 @@ export const ShareButton: React.FC<ShareButtonProps> = ({
       const result = await shareCardFile(blob, name.trim());
 
       if (result.success) {
+        try {
+          track('Card Shared', { template: template.title });
+        } catch {
+          // analytics silent
+        }
         onSuccess(result.message || 'تمت مشاركة البطاقة بنجاح.');
       } else if (result.fallbackNeeded) {
         onFallback(result.message || 'جهازك لا يدعم المشاركة المباشرة، يمكنك تحميل البطاقة ومشاركتها يدويًا.');

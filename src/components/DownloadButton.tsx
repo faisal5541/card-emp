@@ -4,6 +4,7 @@ import { exportCardAsBlob } from '../utils/canvasRenderer';
 import { generateCardFileName } from '../utils/fileName';
 import { Download, Loader2 } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import { track } from '@vercel/analytics';
 
 interface DownloadButtonProps {
   template: CardTemplate;
@@ -54,6 +55,13 @@ export const DownloadButton: React.FC<DownloadButtonProps> = ({
       link.click();
       document.body.removeChild(link);
       URL.revokeObjectURL(url);
+
+      // Track download in Vercel Analytics
+      try {
+        track('Card Downloaded', { template: template.title });
+      } catch {
+        // analytics silent
+      }
 
       // Launch festive confetti
       confetti({
