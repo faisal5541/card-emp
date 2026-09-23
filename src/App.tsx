@@ -7,6 +7,7 @@ import { ToastContainer } from './components/Toast';
 import { Home } from './pages/Home';
 import { TemplatesPage } from './pages/TemplatesPage';
 import { CardEditor } from './components/CardEditor';
+import { Analytics } from '@vercel/analytics/react';
 
 export const App: React.FC = () => {
   const [currentTab, setCurrentTab] = useState<'home' | 'templates' | 'editor'>('home');
@@ -134,6 +135,9 @@ export const App: React.FC = () => {
         toasts={toasts}
         onDismiss={dismissToast}
       />
+
+      {/* Vercel Web Analytics */}
+      <Analytics />
 
     </div>
   );
